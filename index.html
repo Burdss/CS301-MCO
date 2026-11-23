@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is for the webpage settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer - JavaScript</title>
+
+    <!-- This is for connecting the CSS and JavaScript files -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- This is the main container of the application -->
+    <main class="analyzer">
+        <h1>Text Analyzer</h1>
+        <p class="subtitle">JavaScript Version</p>
+
+        <!-- This is for displaying the text statistics -->
+        <section class="stats">
+            <div class="stat">
+                <span id="words">0</span>
+                <p>Words</p>
+            </div>
+            <div class="stat">
+                <span id="letters">0</span>
+                <p>Letters</p>
+            </div>
+            <div class="stat">
+                <span id="characters">0</span>
+                <p>Characters</p>
+            </div>
+            <div class="stat">
+                <span id="sentences">0</span>
+                <p>Sentences</p>
+            </div>
+            <div class="stat">
+                <span id="numbers">0</span>
+                <p>Numbers</p>
+            </div>
+            <div class="stat">
+                <span id="symbols">0</span>
+                <p>Symbols</p>
+            </div>
+            <div class="stat">
+                <span id="letter">0</span>
+                <p>4 letter</p>
+            </div>
+        </section>
+
+        <!-- This is for the text input area -->
+        <label for="textInput">Enter your text</label>
+        <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+
+        <!-- This is for the text operation buttons -->
+        <div class="buttons">
+            <button type="button" id="saveBtn">Save</button>
+            <button type="button" id="copyBtn">Copy</button>
+            <button type="button" id="pasteBtn">Paste</button>
+            <button type="button" id="clearBtn">Clear</button>
+        </div>
+
+        <!-- This is for displaying messages to the user -->
+        <p class="message" id="message" aria-live="polite"></p>
+    </main>
+</body>
+</html>
