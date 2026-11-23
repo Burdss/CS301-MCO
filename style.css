@@ -1,0 +1,155 @@
+
+/* Reset default spacing and sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main page background and text */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
+    background: #080808;
+}
+
+/* Main analyzer panel */
+.analyzer {
+    width: 100%;
+    max-width: 850px;
+    padding: 30px;
+    background: #111111;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* App heading */
+h1 {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Version label under the heading */
+.subtitle {
+    margin-bottom: 25px;
+    color: #aaaaaa;
+    text-align: center;
+}
+
+/* Statistics layout */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+/* Individual statistics boxes */
+.stat {
+    padding: 18px 10px;
+    text-align: center;
+    background: #1b1b1b;
+    border: 1px solid #363636;
+    border-radius: 8px;
+}
+
+/* Number displayed in each box */
+.stat span {
+    font-size: 26px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* Name of each statistic */
+.stat p {
+    margin-top: 7px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+/* Text area label */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Text input area */
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 230px;
+    padding: 15px;
+    resize: vertical;
+    color: #f5f5f5;
+    background: #090909;
+    border: 1px solid #404040;
+    border-radius: 8px;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Highlight the text area when selected */
+textarea:focus {
+    border-color: #aaaaaa;
+}
+
+/* Button layout */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* General button style */
+button {
+    flex: 1;
+    min-width: 100px;
+    padding: 12px 16px;
+    color: #ffffff;
+    background: #292929;
+    border: 1px solid #494949;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #414141;
+}
+
+/* Feedback message */
+.message {
+    min-height: 20px;
+    margin-top: 12px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+/* Link to the other version */
+.switch-link {
+    margin-top: 18px;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Link appearance */
+.switch-link a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
